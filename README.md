@@ -1,4 +1,4 @@
-# esquema-mvc
+# esquema-mvc actualizado desde otro ordenador
 Esto es una primera aproximación al MVC en PHP puro. La base de datos está simulada con un array de usuarios
 
 ## Flujo:
