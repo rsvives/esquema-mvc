@@ -4,7 +4,10 @@ Esto es un CRUD de usuarios en PHP puro y la librería de bases de datos PDO, ut
 
 ## Flujo:
 El `index.php` carga el controlador de usuarios que pide al modelo los datos necesarios a la base de datos. Una vez recibidos los datos, el controlador carga la vista por defecto `table_view.php`
+
+
 ![image](https://user-images.githubusercontent.com/91197522/150655087-ed137097-c33e-4985-85ef-c2bbe1fd5ccd.png)
+
 
 ## Controlador de usuarios:
 
