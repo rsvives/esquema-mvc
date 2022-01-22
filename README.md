@@ -3,10 +3,8 @@
 Esto es un CRUD de usuarios en PHP puro y la librería de bases de datos PDO, utilizando un patrón de diseño MVC. Este ejercicio está inspirado en el [siguiente post de Victor Robles](https://victorroblesweb.es/2013/11/18/tutorial-mvc-en-php-nativo/).
 
 ## Flujo:
-![image](https://user-images.githubusercontent.com/91197522/150655008-efd631c1-d145-41f0-94f2-25dac0839562.png)
-
-
 El `index.php` carga el controlador de usuarios que pide al modelo los datos necesarios a la base de datos. Una vez recibidos los datos, el controlador carga la vista por defecto `table_view.php`
+![image](https://user-images.githubusercontent.com/91197522/150655087-ed137097-c33e-4985-85ef-c2bbe1fd5ccd.png)
 
 ## Controlador de usuarios:
 
