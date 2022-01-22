@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+body {
+    position: relative;
+}
+h1 {
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+header {
+    display: flex;
+    padding: 12px;
+    background-color: #07beb8;
+    color: white;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+header #logo {
+    height: 32px;
+}
+header span {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 8px;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-collapse: collapse;
+    /* border: 1px solid gray; */
+}
+
+table tr:not(:last-child) {
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+table th {
+    background-color: #07beb8;
+    color: white;
+    padding: 8px 12px;
+}
+table td {
+    padding: 12px;
+    white-space: nowrap;
+    text-align: center;
+    min-width: 80px;
+}
+
+button.button {
+    padding: 4px 8px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    margin: auto 8px;
+    border-radius: 8px;
+    min-width: 80px;
+    max-width: 200px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+}
+button.button:first-of-type {
+    margin-left: 0;
+}
+button.button:last-of-type {
+    margin-right: 0;
+}
+button.button img {
+    display: inline-block;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.button.primary {
+    background-color: #07beb8;
+    color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.button.primary.outlined {
+    border: 2px solid #07beb8;
+    background-color: transparent;
+    color: #07beb8;
+}
+.button-group {
+    display: flex;
+}
+.button-group button {
+    width: 100%;
+}
+
+section#contenido {
+    box-sizing: content-box;
+    padding: 32px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#contenido #titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.tarjeta {
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    display: block;
+    max-width: 300px;
+}
+.form_rows {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form_rows label {
+    margin-bottom: 8px;
+}
+.form_rows input {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.form_rows button {
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
