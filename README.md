@@ -21,6 +21,10 @@ El controlador de usuarios por defecto devuelve la vista de la tabla, pero si se
 
 *Antes de devolver las vistas, el controlador tiene que llamar al modelo para cargar los datos. Las vistas se encuentran en la carpeta `views`
 
+## Base de datos:
+
+El archivo de configuración de la base de datos es `db.php`. Se ha añadido también un fichero llamado `empresa.sql` con el sql pertinente para crear una base de datos.
+
 ## Modelo de usuarios:
 
 El modelo es el encargado de hacer de intermediario entre la base de datos y el controlador. Es una plantilla que nos permite definir y gestionar, de una forma sencilla, atributos y métodos que se van a repetir muchas veces. 
