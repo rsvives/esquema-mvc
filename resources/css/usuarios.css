@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,500&display=swap");
+:root {
+    --color-primario: #07beb8;
+}
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +19,10 @@ h1 {
 header {
     display: flex;
     padding: 12px;
-    background-color: #07beb8;
+    background-color: var(--color-primario);
     color: white;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     position: sticky;
     top: 0;
     width: 100%;
@@ -48,7 +51,7 @@ table tr:not(:last-child) {
     border-bottom: 1px solid rgb(197, 197, 197);
 }
 table th {
-    background-color: #07beb8;
+    background-color: var(--color-primario);
     color: white;
     padding: 8px 12px;
 }
@@ -62,7 +65,7 @@ table td {
 button.button {
     padding: 4px 8px;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 11px;
     text-transform: uppercase;
     border: 2px solid transparent;
     margin: auto 8px;
@@ -88,14 +91,15 @@ button.button img {
 }
 
 .button.primary {
-    background-color: #07beb8;
+    background-color: var(--color-primario);
     color: white;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 .button.primary.outlined {
-    border: 2px solid #07beb8;
+    border: 2px solid var(--color-primario);
     background-color: transparent;
-    color: #07beb8;
+    color: var(--color-primario);
+    box-shadow: none;
 }
 .button-group {
     display: flex;

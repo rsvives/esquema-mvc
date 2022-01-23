@@ -40,14 +40,11 @@ class UserModel
     public function updateUser($id)
     {
         $sql = "UPDATE usuarios SET nombre=?, apellidos=?, email=?, passwd=? WHERE id = ?";
-        $stmt = $this->db->prepare($sql)->execute([$this->nombre, $this->apellidos, $this->email, $this->passwd, $id]);
-        // echo "editando el usuario con id $id, $this->nombre"; //esto emula la función de editar un usuario
+        $this->db->prepare($sql)->execute([$this->nombre, $this->apellidos, $this->email, $this->passwd, $id]);
     }
     public function deleteUser($id)
     {
-        //aquí iría el SQL para borrar el usuario por id
         $sql = "DELETE FROM usuarios  WHERE id = ?";
-        $stmt = $this->db->prepare($sql)->execute([$id]);
-        return $mensaje = "borrando el usuario con id $id"; //esto emula la función de borrar un usuario
+        $this->db->prepare($sql)->execute([$id]);
     }
 }

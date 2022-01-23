@@ -35,7 +35,6 @@
             </tr>
             <?php
             foreach ($users as $user) { ?>
-
                 <tr>
                     <td><?php echo $user['id'] ?></td>
                     <td><?php echo $user['nombre'] ?></td>
@@ -48,14 +47,14 @@
                             <div class="button-group">
                                 <button type="submit" name="accion" class="button primary outlined" value="vista_editar"><img src="resources/img/pencil-duotone.png" alt="" srcset=""> editar</button>
                                 <button type="submit" name="accion" class="button primary outlined" value="borrar"> <img src="resources/img/trash-duotone.png" alt="" srcset="">borrar</button>
-
                             </div>
                         </form>
-
                     </td>
                 </tr>
+
             <?php } ?>
         </table>
+
     </section>
 
 </body>
